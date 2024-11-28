@@ -1,0 +1,18 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+import Section from "./Section.astro";
+import { experience } from "@data";
+---
+
+<Section
+  title="Experiencia"
+  imageUrl="/images/engranaje.png"
+  ref="experience"
+>
+  <ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {experience.map((item, index) => (
+      <ExperienceItem key={index} {...item} />
+    ))}
+  </ol>
+  
+</Section>

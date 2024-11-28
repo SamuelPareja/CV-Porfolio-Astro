@@ -1,0 +1,65 @@
+---
+import type { Project } from "src/interfaces/project.interface";
+import Badge from "./Badge.astro";
+import SocialCard from "./SocialCard.astro";
+
+const { name, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
+  Astro.props as Project;
+---
+
+<div class="flex flex-col gap-8">
+
+  <div>
+    <h3 class="text-indigo-400 text-xl font-bold mb-4 mt-4">{name}</h3>
+
+    <p>{description}</p>
+
+    <div class="flex gap-8 mt-8">
+      {
+        imageUrl && (
+          <div>
+            <img
+              class="aspect-video rounded-xl"
+              src={imageUrl}
+              alt={`Imagen descriptiva del proyecto ${name}`}
+            />
+          </div>
+        )
+      }
+      {
+        tags && (
+          <div class="flex gap-1 flex-wrap mb-3">
+            {tags.map(tag => (
+              <Badge label={tag.label} imageUrl={tag.iconUrl} />
+            ))}
+          </div>
+        )
+      }
+
+    </div>
+
+    <div class="flex gap-3 mt-6">
+      {
+        repositoryUrl && (
+          <SocialCard
+            network="Código"
+            iconUrl="/images/github.svg"
+            url={repositoryUrl}
+            title={`Ver código en GitHub`}
+          />
+        )
+      }
+      {
+        demoUrl && (
+          <SocialCard
+            network="Demo"
+            iconUrl="/images/transmision-en-vivo.png"
+            url={demoUrl}
+            title={`Ver demo en vivo`}
+          />
+        )
+      }
+    </div>
+  </div>
+</div>
+

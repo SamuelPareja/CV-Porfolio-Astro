@@ -1,0 +1,31 @@
+---
+interface Props {
+  network: string;
+  url: string;
+  iconUrl: string;
+  title: string;
+}
+
+const { network, url, iconUrl, title } = Astro.props;
+---
+
+<a
+  class="flex gap-2 py-2 px-4 w-fit rounded-full hover:bg-slate-700 cursor-pointer"
+  href={url}
+  target="_blank"
+  title={title}
+>
+  <img src={iconUrl} alt={`Perfil de ${network}`} />
+  <span>{network}</span>
+</a>
+
+<style>
+  a {
+    background-color: #282828;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+</style>

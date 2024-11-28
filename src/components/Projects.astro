@@ -1,0 +1,21 @@
+---
+import type { Project } from "src/interfaces/project.interface";
+import ProjectItem from "./ProjectItem.astro";
+import Section from "./Section.astro";
+import { projects } from "@data";
+---
+
+<Section title="Proyectos" imageUrl="/images/sombrero-de-graduacion.png" ref="projects">
+  {
+    (projects as Project[]).map(project => {
+      return (
+        <>
+          <ProjectItem {...project} />
+          {project !== projects[projects.length - 1] && (
+            <hr class="my-4 mt-10 border-0" />
+          )}
+        </>
+      );
+    })
+  }
+</Section>

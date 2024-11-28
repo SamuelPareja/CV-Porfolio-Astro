@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro";
+import SocialCard from "./SocialCard.astro";
+
+import { socialNetworks, name, email } from "@data";
+---
+
+<Section title="Contacto" imageUrl="/images/telefono.png" ref="contact">
+  <p class="mb-10 mt-10">
+    Si quieres contactarme, puedes hacerlo a través de las siguientes maneras:
+  </p>
+  <ul class="flex gap-16 flex-wrap justify-center">
+    <SocialCard
+      network="Correo"
+      iconUrl="/images/email.png"
+      url={`mailto:${email}`}
+      title={`Enviar un correo electrónico a ${name}`}
+    />
+    {
+      socialNetworks.map(socialLink => (
+        <SocialCard
+          {...socialLink}
+          title={`Visitar el perfil de ${name} en ${socialLink.network}`}
+        />
+      ))
+    }
+  </ul>
+</Section>

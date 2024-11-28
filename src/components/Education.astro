@@ -1,0 +1,18 @@
+---
+import EducationItem from "./EducationItem.astro";
+import Section from "./Section.astro";
+import { education } from "@data";
+---
+
+<Section
+  title="Educación"
+  imageUrl="/images/maletin.png"
+  ref="education"
+>
+
+  <ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {education.map((item, index) => (
+      <EducationItem key={index} {...item} />
+    ))}
+  </ol>
+</Section>

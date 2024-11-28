@@ -1,0 +1,203 @@
+{
+  "imageUrl": "/images/yop.jpg",
+  "name": "Samuel",
+  "fullName": "Samuel Pareja",
+  "summary": "Desarrollador Front-end y Back-end",
+  "aboutMe": [
+    {
+      "description": "Soy desarrollador Back-end y Front-end, Vivo en Sevilla, España. He trabajado con varias empresas en el sector de la hostelería. Buscando una nueva experiencia en un campo diferente."
+    },{
+      "description": "Me especializo en el desarrollo back-end con tecnologías como Java, Spring Boot, y MySQL. Además, me especializo en el desarrollo front-end utilizando HTML, CSS, Tailwind, Astro y JavaScript."
+    },{
+      "description": "Actualmente estoy aprendiendo acerca de tecnologías como Node.js, Angular, Express, Python, Php, React y MongoDB."
+    }
+ ],
+  "email": "zamvel_1@hotmail.com",
+  "location": "Sevilla, España",
+  "socialNetworks": [
+    {
+      "network": "Linkedin",
+      "iconUrl": "/images/linkedin.svg",
+      "url": "https://www.linkedin.com/in/samuel-ord%C3%B3%C3%B1ez-pareja-64081933a/"
+    },
+    {
+      "network": "Github",
+      "iconUrl": "/images/github.svg",
+      "url": "https://github.com/SamuelPareja"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Santa Joaquina de Vedruna - Sevilla",
+      "area": "CFGS en Desarrollo de Aplicaciones Web",
+      "startDate": "2022",
+      "endDate": "2024",
+      "highlights": [
+        "En el grado superior he adquirido conocimientos sobre programación orientada a objetos, estructuras de datos, manejo de frameworks como Hibernate y Spring Boot. Además, he aprendido sobre el uso de herramientas de construcción y gestión de proyectos como Maven y Gradle, así como conocimientos sobre HTML, Astro, CSS y Tailwind."
+      ],
+      "imageUrl": "/images/vedruna.jpg"
+    },
+    {
+      "institution": "Punta del Verde - Sevilla",
+      "area": "Bachillerato",
+      "startDate": "2018",
+      "endDate": "2020",
+      "highlights": [
+        "Durante el bachillerato, comencé a adquirir mis primeros conocimientos en la asignatura de informática. Aprendí los fundamentos de la programación, el manejo de estructuras de datos y los conceptos básicos de algoritmos. Esta experiencia inicial despertó mi interés por el desarrollo de software y sentó las bases para mi formación posterior en tecnologías más avanzadas."
+      ],
+      "imageUrl": "/images/puntaverde.jpg"
+    }
+  ],
+  "skills": [
+    {
+      "basics": [
+        {
+          "label": "MongoDB",
+          "iconUrl": "/images/mongodb.svg"
+        },
+        {
+          "label": "Angular",
+          "iconUrl": "/images/angular.svg"
+        },
+        {
+          "label": "RxJs",
+          "iconUrl": "/images/rxjs.svg"
+        },
+        {
+          "label": "JWT",
+          "iconUrl": "/images/jwt.svg"
+        },
+        {
+          "label": "Git",
+          "iconUrl": "/images/git.svg"
+        },
+        {
+          "label": "Docker",
+          "iconUrl": "/images/docker.svg"
+        },
+        {
+          "label": "Angular Material",
+          "iconUrl": "/images/angular-material.png"
+        },
+        {
+          "label": "Spring Security",
+          "iconUrl": "/images/spring-security.png"
+        }
+      ],
+      "advanced": [
+        {
+          "label": "HTML",
+          "iconUrl": "/images/html5.svg"
+        },
+        {
+          "label": "CSS",
+          "iconUrl": "/images/css.svg"
+        },
+        {
+          "label": "MySQL",
+          "iconUrl": "/images/mysql.svg"
+        },
+        {
+          "label": "Typescript",
+          "iconUrl": "/images/typescript.svg"
+        },
+        {
+          "label": "Javascript",
+          "iconUrl": "/images/javascript.svg"
+        },
+        {
+          "label": "Node",
+          "iconUrl": "/images/nodejs.svg"
+        },
+        {
+          "label": "Spring Boot",
+          "iconUrl": "/images/spring-boot.png"
+        },
+        {
+          "label": "Java",
+          "iconUrl": "/images/java.svg"
+        },
+        {
+          "label": "Figma",
+          "iconUrl": "/images/figma.svg"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "startDate": "2019",
+      "endDate": "Actualmente",
+      "ocupation": "Camarero",
+      "name": "Malhablada, Sevilla",
+      "description": "Camarero a tiempo parcial con responsabilidades que incluyen coordinar el servicio de alimentos, gestionar el almacenamiento y el inventario de productos, y asegurar un espacio de trabajo limpio y organizado.",
+      "imageUrl": "/images/malhablada.jpg"
+    },
+    {
+      "startDate": "2016",
+      "endDate": "2019",
+      "ocupation": "Camarero",
+      "name": "La Vespa, Sevilla",
+      "description": "Camarero y gerente a tiempo completo responsable de la programación, la gestión del inventario de productos y la supervisión de los trabajadores durante los turnos.",
+      "imageUrl": "/images/vespa.jpg"
+    },
+    {
+      "startDate": "2014",
+      "endDate": "2016",
+      "ocupation": "Camarero y Diseñador de Espacios",
+      "name": "Party&co, Sevilla",
+      "description": "Decorador de espacios para eventos y camarero, responsable de la decoración de lugares y mesas para crear una experiencia sin preocupaciones para los clientes.",
+      "imageUrl": "/images/catering.jpg"
+    }
+  ],
+  "projects": [
+    {
+     "name": "PORFOLIO CURRICULUM ASTRO",
+     "description": [
+       "He creado un proyecto en Astro utilizando la tecnología Tailwind en lugar de CSS tradicional. El diseño del proyecto fue realizado en Figma y posteriormente subido a un repositorio en GitHub."
+     ],
+     "imageUrl": "/images/figma.png",
+     "repositoryUrl": "https://github.com/SamuelPareja",
+     "demoUrl": "https://www.figma.com/design/3sxv49ybIT3yvGRqz4G30f/Proyecto-dise%C3%B1o-figma?node-id=0-1&t=z0NbsPgV5pNGUxil-1",
+     "tags": [
+       { "label": "Angular", "iconUrl": "/images/angular.svg" },
+       {
+         "label": "Angular Material",
+         "iconUrl": "/images/angular-material.png"
+       },
+       { "label": "Tailwind", "iconUrl": "/images/tailwindcss.svg" },
+       { "label": "Java", "iconUrl": "/images/java.svg" },
+       { "label": "Spring boot", "iconUrl": "/images/spring-boot.png" },
+       {
+         "label": "Spring Security",
+         "iconUrl": "/images/spring-security.png"
+       },
+       { "label": "JWT", "iconUrl": "/images/jwt.svg" }
+     ]
+   }, 
+   {
+    "name": "DISEÑO Y CREACIÓN PAGINA DE ROPA",
+    "description": [
+      "He creado un proyecto en Figma para una página de venta de ropa y lo he desarrollado en Visual Studio Code utilizando Tailwind."
+    ],
+    "imageUrl": "/images/tienda.png",
+    "repositoryUrl": "https://github.com/SamuelPareja",
+    "demoUrl": "https://www.figma.com/design/N0Js0skfBDx9534GU3YFG4/Proyecto_Dise%C3%B1o?node-id=0-1&t=NMWwKyZWY08VCnzc-1",
+    "tags": [
+      { "label": "Angular", "iconUrl": "/images/angular.svg" },
+      {
+        "label": "Angular Material",
+        "iconUrl": "/images/angular-material.png"
+      },
+      { "label": "Tailwind", "iconUrl": "/images/tailwindcss.svg" },
+      { "label": "Java", "iconUrl": "/images/java.svg" },
+      { "label": "Spring boot", "iconUrl": "/images/spring-boot.png" },
+      {
+        "label": "Spring Security",
+        "iconUrl": "/images/spring-security.png"
+      },
+      { "label": "JWT", "iconUrl": "/images/jwt.svg" }
+    ]
+   }
+ ]
+}

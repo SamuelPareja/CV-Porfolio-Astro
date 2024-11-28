@@ -1,0 +1,23 @@
+---
+
+import type { Skills } from "src/interfaces/skills.interface";
+import SkillsItem from "./SkillsItem.astro";
+import Section from "./Section.astro";
+import { skills } from "@data";
+---
+
+
+<Section title="Skills" imageUrl="/images/thinking.png" ref="skills">
+  {
+    (skills as Skills[]).map(skills => {
+      return (
+        <>
+          <SkillsItem {...skills} />
+          {skills !== skills && (
+            <hr class="my-4 mt-10 border-0" />
+          )}
+        </>
+      );
+    })
+  }
+</Section>

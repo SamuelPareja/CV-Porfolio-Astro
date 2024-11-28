@@ -1,0 +1,13 @@
+---
+interface Props {
+  imageUrl: string;
+  label: string;
+}
+
+const { imageUrl, label }: Props = Astro.props;
+---
+
+<div class="flex items-center gap-1 py-1 px-2 bg-[#282828] rounded-full">
+  <img src={imageUrl} alt={`Icono de ${label}`} class="size-4" />
+  <p class="text-sm">{label}</p>
+</div>

@@ -1,0 +1,96 @@
+---
+const menubarItems = [
+  { name: "Sobre Mi", link: "#about" },
+  { name: "Educación", link: "#education" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experiencia", link: "#experience" },
+  { name: "Proyectos", link: "#projects" },
+  { name: "Contacto", link: "#contact" }
+];
+---
+
+<header class="sticky top-0 mb-10 md:my-10 md:pt-2 z-50">
+  <nav
+    class="md:w-fit bg-custom-dark md:border md:border-slate-200 rounded-b md:rounded-full mx-auto py-2 px-8 md:px-24"
+  >
+    <div class="flex justify-between items-center md:hidden">
+      <span class="font-bold">Menú</span>
+      <button
+        class="flex flex-col gap-[5px] size-5 border-0"
+        id="toggleMenu"
+        aria-label="Abrir menú"
+      >
+        <div
+          class="border w-full transition-all duration-300 origin-left"
+          id="menuTick1"
+        >
+        </div>
+        <div class="border w-full transition-all duration-300" id="menuTick2">
+        </div>
+        <div
+          class="border w-full transition-all duration-300 origin-left"
+          id="menuTick3"
+        >
+        </div>
+      </button>
+    </div>
+    <ul
+      class="hidden md:flex md:flex-row items-center gap-3 lg:gap-10"
+      id="menu"
+    >
+      {
+        menubarItems.map(({ name, link }) => (
+          <li>
+            <a
+              href={link}
+              class="text-white hover:text-gray-300"
+              title={`Ir a la sección de ${name}`}
+            >
+              {name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const $toggleMenuButton = document.querySelector("#toggleMenu");
+  const $menu = document.querySelector("#menu");
+  $toggleMenuButton.addEventListener("click", () => {
+    $menu.setAttribute("style", "animation: fadeIn .4s ease-in-out");
+    if ($menu.classList.contains("hidden")) {
+      $menu.classList.remove("hidden");
+      $menu.classList.add("flex");
+      $menu.classList.add("flex-col");
+    } else {
+      $menu.classList.remove("flex");
+      $menu.classList.remove("flex-col");
+      $menu.classList.add("hidden");
+    }
+  });
+
+  const $menuTick1 = document.querySelector("#menuTick1");
+  const $menuTick2 = document.querySelector("#menuTick2");
+  const $menuTick3 = document.querySelector("#menuTick3");
+
+  $toggleMenuButton.addEventListener("click", () => {
+    $menuTick1.classList.toggle("rotate-45");
+    $menuTick2.classList.toggle("opacity-0");
+    $menuTick3.classList.toggle("-rotate-45");
+  });
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+import Education from "@components/Education.astro";
+import Menubar from "@components/Menubar.astro";
+import Layout from "../layouts/Layout.astro";
+import About from "@components/About.astro";
+import Skills from "@components/Skills.astro";
+import Experience from "@components/Experience.astro";
+import Projects from "@components/Projects.astro";
+import Contact from "@components/Contact.astro";
+import TopButton from "@components/TopButton.astro";
+---
+
+<Layout
+  title="Porfolio de Samuel Pareja - Desarrollador Back-end y Front-end."
+  description="Desarrollador back-end Front-end especializado en Java con experiencia en Spring Boot, Hibernate, Maven, Git, MySQL, Tailwind, CSS, Astro y Diseñador en Figma."
+>
+  <Menubar />
+  <main>
+    <About />
+  </main>
+  <Education />
+  <Skills />
+  <Experience />
+  <Projects />
+  <Contact />
+  <TopButton />
+</Layout>
